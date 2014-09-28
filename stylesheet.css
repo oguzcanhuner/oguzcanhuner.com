@@ -1,0 +1,54 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+body{
+  background-color: white;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.h1{
+  color: #333;
+  font-size: 80px;
+  line-height: 95px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  line-height: 30px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+div.strip{
+  height: 30px;
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #FA58F4;
+}
+
+.centered{
+  text-align: center;
+}
+
+.half{
+  width: 44%;
+  float: left;
+  padding: 3%;
+}
+
+.clearfix{
+  clear: both;
+}
