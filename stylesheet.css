@@ -11,11 +11,29 @@ p{
   padding: 0;
 }
 
+a{
+  color: #819FF7;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #FA58F4;
+}
+
 .h1{
   color: #333;
   font-size: 80px;
   line-height: 95px;
   font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 15px;
+}
+
+.h2{
+  color: #333;
+  font-size: 30px;
+  line-height: 55px;
+  font-weight: normal;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -25,6 +43,12 @@ p{
   line-height: 30px;
   color: #333;
   margin-bottom: 15px;
+}
+
+.note{
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .container{
@@ -49,6 +73,36 @@ div.strip{
   padding: 3%;
 }
 
+.third{
+  width: 33.33%;
+  float: left;
+}
+
+.two-thirds{
+  width: 66.66%;
+  float: left;
+}
+
+.small-margin{
+  margin-bottom: 10px;
+}
+
 .clearfix{
+  overflow: auto;
   clear: both;
+}
+
+footer{
+  height: 20px;
+}
+
+@media only screen and (max-width : 640px) {
+  .container{
+    margin: 0px 10px;
+  }
+  .half, .third, .two-thirds{
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
 }
