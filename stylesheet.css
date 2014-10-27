@@ -12,7 +12,7 @@ p{
 }
 
 a{
-  color: #819FF7;
+  color: #3399FF;
   font-weight: bold;
 }
 
@@ -36,6 +36,7 @@ a:hover{
   font-weight: normal;
   font-family: 'Oswald', sans-serif;
 }
+
 
 p{
   font-size: 20px;
@@ -92,6 +93,10 @@ div.strip{
   clear: both;
 }
 
+.underlined{
+  text-decoration: underline;
+}
+
 footer{
   height: 20px;
 }
@@ -100,9 +105,14 @@ footer{
   .container{
     margin: 0px 10px;
   }
+
   .half, .third, .two-thirds{
     width: 100%;
     float: none;
     padding: 0;
+  }
+
+  .h2{
+    font-size: 28px;
   }
 }
