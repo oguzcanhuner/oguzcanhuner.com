@@ -4,6 +4,7 @@ header, section, footer, aside, nav, main, article, figure {
 
 body{
   background-color: white;
+  background-image: url("space.jpg");
 }
 
 p{
@@ -12,7 +13,7 @@ p{
 }
 
 a{
-  color: #3399FF;
+  color: #88A6C5;
   font-weight: bold;
 }
 
@@ -21,17 +22,17 @@ a:hover{
 }
 
 .h1{
-  color: #333;
-  font-size: 80px;
-  line-height: 95px;
+  color: #e4e4e4;
+  font-size: 100px;
+  line-height: 105px;
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
   margin-bottom: 15px;
 }
 
 .h2{
-  color: #333;
-  font-size: 30px;
+  color: #e4e4e4;
+  font-size: 45px;
   line-height: 55px;
   font-weight: normal;
   font-family: 'Oswald', sans-serif;
@@ -42,7 +43,7 @@ p{
   font-size: 20px;
   font-family: 'Lato', sans-serif;
   line-height: 30px;
-  color: #333;
+  color: #e4e4e4;
   margin-bottom: 15px;
 }
 
@@ -55,6 +56,8 @@ p{
 .container{
   max-width: 900px;
   margin: auto;
+  background-color: rgba(0,0,0,0.3);
+  position: relative;
 }
 
 div.strip{
@@ -62,6 +65,10 @@ div.strip{
   margin: 20px 0px;
   width: 100%;
   background-color: #FA58F4;
+}
+
+div.strip.thin{
+  height: 10px;
 }
 
 .centered{
@@ -99,6 +106,26 @@ div.strip{
 
 footer{
   height: 20px;
+}
+
+.stars{
+  position: absolute;
+  left: -25%;
+  background: url(stars.png);
+  display: block;
+  width: 1500px;
+  height: 800px;
+  top: 0;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  z-index: 100;
+}
+
+@-webkit-keyframes rotate {
+  from { -webkit-transform: rotate(0deg);  }
+    to { -webkit-transform: rotate(360deg);  }
 }
 
 @media only screen and (max-width : 640px) {

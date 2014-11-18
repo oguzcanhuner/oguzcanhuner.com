@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link href="../stylesheet.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400|Oswald:700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  </head>
+
+  <body>
+    <article class="container">
+      <h1 class="h1 centered">Sensibly DRY</h1>
+      <div class="strip thin"></div>
+      <h2 class="h2">In the begining things were DRY</h2>
+      <p>
+        DRY, also known as Don't Repeat Yourself, is a pretty basic programming principle
+        which most programmers learn early on in their careers. It's very easy to pick up; if you
+        have two or more bits of code that do the same thing, you should define that code in
+        one place where it can be shared. This means that if you need to change the behaviour of
+        the code, there's now only one place that you need to change it in. 
+      </p>
+      <code>some code</code>
+
+      <h2 class="h2">Coupling</h2>
+      <p>
+        Software coupling is essentially a measure of how much bits of code in a system rely on
+        each other. Each individual case of code relying on other code is called software dependancy.
+      </p>
+      <blockquote>
+        <p>
+          An object depends on another object if, when one object changes, the other might
+          be forced to change in turn
+        </p>
+        <footer>Sandi Metz - Pratical Object-Oriented Design in Ruby</footer>
+      </blockquote>
+      <p>
+      </p>
+      <h2 class="h2">Context is important</h2>
+      <p>DRY is easy to understand but it's important to keep in mind that it is a software pattern and, like
+      every other software pattern, must be used appropriately and not in every situation. Consider the
+      following example:  </p>
+
+      <p>You've just created a new email template which requires a date. You already have a helper which generates a date
+      and that helper is used in a view. The format of the date in the helper is what you want, so you decide that you 
+      should keep the code DRY and just use the helper instead of defining that date elsewhere.</p>
+      <p>After a while, there's a requirement to change the date format in the email templates. This is when
+      your code dependency kicks in. If you change the format of the date in the helper, it'll break the format in the views.
+
+    </article>
+  </body>
+</html>
