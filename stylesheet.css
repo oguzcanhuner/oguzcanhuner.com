@@ -5,6 +5,11 @@ header, section, footer, aside, nav, main, article, figure {
 body{
   background-color: white;
   background-image: url("space.jpg");
+  background-size: 1500px;
+}
+
+p, a, .h1, .h2{
+  z-index: 100;
 }
 
 p{
@@ -60,7 +65,7 @@ p{
   max-width: 900px;
   margin: auto;
   background-color: rgba(0,0,0,0.3);
-  position: relative;
+  z-index: 100;
 }
 
 div.strip{
@@ -109,26 +114,6 @@ div.strip.thin{
 
 footer{
   height: 20px;
-}
-
-.stars{
-  position: absolute;
-  left: -25%;
-  background: url(stars.png);
-  display: block;
-  width: 1500px;
-  height: 800px;
-  top: 0;
-  -webkit-animation-name: rotate;
-  -webkit-animation-duration: 40s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  z-index: 100;
-}
-
-@-webkit-keyframes rotate {
-  from { -webkit-transform: rotate(0deg);  }
-    to { -webkit-transform: rotate(360deg);  }
 }
 
 @media only screen and (max-width : 640px) {

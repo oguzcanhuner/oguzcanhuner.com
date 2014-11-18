@@ -7,8 +7,11 @@
 
   <body>
     <article class="container">
-      <h1 class="h1 centered">Sensibly DRY</h1>
+      <h1 class="h1 centered">DRY so hard motherfuckers wanna find me</h1>
       <div class="strip thin"></div>
+      <p class="strapline">Understanding the difference between code which looks the same
+      and code which is the same can save you a lot of stress in the future.</p>
+
       <h2 class="h2">In the begining things were DRY</h2>
       <p>
         DRY, also known as Don't Repeat Yourself, is a pretty basic programming principle
@@ -17,7 +20,6 @@
         one place where it can be shared. This means that if you need to change the behaviour of
         the code, there's now only one place that you need to change it in. 
       </p>
-      <code>some code</code>
 
       <h2 class="h2">Coupling</h2>
       <p>
@@ -31,19 +33,28 @@
         </p>
         <footer>Sandi Metz - Pratical Object-Oriented Design in Ruby</footer>
       </blockquote>
-      <p>
-      </p>
+
       <h2 class="h2">Context is important</h2>
-      <p>DRY is easy to understand but it's important to keep in mind that it is a software pattern and, like
-      every other software pattern, must be used appropriately and not in every situation. Consider the
-      following example:  </p>
+      <p>I said above that DRY is easy to understand but I've seen it go wrong a lot. In my experience, the
+      main cause of this has been a lack of understanding of context around the code being DRYed. Consider this
+      example:</p>
 
-      <p>You've just created a new email template which requires a date. You already have a helper which generates a date
-      and that helper is used in a view. The format of the date in the helper is what you want, so you decide that you 
-      should keep the code DRY and just use the helper instead of defining that date elsewhere.</p>
-      <p>After a while, there's a requirement to change the date format in the email templates. This is when
-      your code dependency kicks in. If you change the format of the date in the helper, it'll break the format in the views.
+      <code>
+        def subtract_10_percent_from number
+          number - (number * 0.1)
+        end
+      </code>
 
-    </article>
+      <code>
+        def calculate_tax
+          ...
+          subtract_10_percent_from number
+          ...
+        end
+      </code>
+      
+
+      <p> The code above is a helper method which was originally written to </p>
+      </article>
   </body>
 </html>
