@@ -3,26 +3,20 @@ header, section, footer, aside, nav, main, article, figure {
 }
 
 body{
-  background-color: white;
-  background-image: url("space.jpg");
-  background-size: 1500px;
-}
-
-p, a, .h1, .h2{
-  z-index: 100;
+  background-color: #222;
 }
 
 p{
   margin: 0;
   padding: 0;
-  text-rendering: optimizeLegibility;
-  text-shadow:0 0 1px transparent;
-  font-weight: 300;
+  color: white;
+  font: 16px/30px 'Fauna One', Georgia, serif;
 }
 
 a{
   color: #88A6C5;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover{
@@ -31,28 +25,24 @@ a:hover{
 
 .h1{
   color: #e4e4e4;
-  font-size: 100px;
   line-height: 105px;
-  font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font: 70px/68px 'Playfair Display', Georgia, serif;
   margin-bottom: 15px;
 }
 
 .h2{
   color: #e4e4e4;
-  font-size: 45px;
   line-height: 55px;
-  font-weight: normal;
-  font-family: 'Oswald', sans-serif;
+  font: 45px/68px 'Playfair Display', Georgia, serif;
 }
 
+.hero{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 
-p{
-  font-size: 20px;
-  font-family: 'Lato', sans-serif;
-  line-height: 30px;
-  color: #e4e4e4;
-  margin-bottom: 15px;
+.hero p{
+  margin-bottom: 10px;
 }
 
 .note{
@@ -63,13 +53,13 @@ p{
 
 .container{
   max-width: 900px;
-  margin: auto;
-  background-color: rgba(0,0,0,0.3);
-  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 div.strip{
-  height: 30px;
+  height: 20px;
   margin: 20px 0px;
   width: 100%;
   background-color: #FA58F4;
@@ -84,23 +74,37 @@ div.strip.thin{
 }
 
 .half{
-  width: 44%;
-  float: left;
-  padding: 3%;
-}
-
-.third{
-  width: 33.33%;
+  width: 50%;
   float: left;
 }
 
-.two-thirds{
-  width: 66.66%;
+.one-fifth{
+  width: 20%;
   float: left;
 }
+
+.two-fifths{
+  width: 40%;
+  float: left;
+}
+
+.three-fifths{
+  width: 60%;
+  float: left;
+}
+
+.four-fifths{
+  width: 80%;
+  float: left;
+}
+
 
 .small-margin{
   margin-bottom: 10px;
+}
+
+.medium-margin{
+  margin-bottom: 20px;
 }
 
 .clearfix{
