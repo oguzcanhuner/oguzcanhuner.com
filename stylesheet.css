@@ -15,7 +15,6 @@ p{
 
 a{
   color: #88A6C5;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -39,10 +38,6 @@ a:hover{
 .hero{
   margin-top: 60px;
   margin-bottom: 60px;
-}
-
-.hero p{
-  margin-bottom: 10px;
 }
 
 .note{
