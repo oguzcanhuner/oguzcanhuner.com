@@ -26,7 +26,6 @@ a:hover{
   color: #e4e4e4;
   line-height: 105px;
   font: 70px/68px 'Playfair Display', Georgia, serif;
-  margin-bottom: 15px;
 }
 
 .h2{
@@ -36,8 +35,8 @@ a:hover{
 }
 
 .hero{
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .note{
@@ -47,21 +46,10 @@ a:hover{
 }
 
 .container{
-  max-width: 900px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-}
-
-div.strip{
-  height: 20px;
-  margin: 20px 0px;
-  width: 100%;
-  background-color: #FA58F4;
-}
-
-div.strip.thin{
-  height: 10px;
 }
 
 .centered{
@@ -102,6 +90,15 @@ div.strip.thin{
   margin-bottom: 20px;
 }
 
+.large-margin{
+  margin-bottom: 30px;
+}
+
+.strip{
+  height: 5px;
+  background-color: #FA58F4;
+}
+
 .clearfix{
   overflow: auto;
   clear: both;
@@ -116,17 +113,16 @@ footer{
 }
 
 @media only screen and (max-width : 640px) {
-  .container{
-    margin: 0px 10px;
-  }
+  .container{ margin: 0px 10px; }
 
-  .half, .third, .two-thirds{
+  .third, .two-thirds, .one-fifth, .two-fifths, .three-fifths, .four-fifths{
     width: 100%;
     float: none;
     padding: 0;
   }
 
-  .h2{
-    font-size: 28px;
-  }
+  .h2{ font-size: 25px; }
+  .h1{ font-size: 60px; }
+  .large-margin{ margin-bottom: 20px }
+  .medium-margin{ margin-bottom: 10px }
 }
