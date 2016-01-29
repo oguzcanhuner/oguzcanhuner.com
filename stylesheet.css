@@ -56,6 +56,11 @@ a:hover{
   text-align: center;
 }
 
+.centered-block{
+  margin: auto;
+  width: 320px;
+}
+
 .half{
   width: 50%;
   float: left;
@@ -97,6 +102,10 @@ a:hover{
 .strip{
   height: 5px;
   background-color: #FA58F4;
+}
+
+.background-black{
+  background-color: black;
 }
 
 .clearfix{
