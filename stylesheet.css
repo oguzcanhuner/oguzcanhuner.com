@@ -3,13 +3,18 @@ header, section, footer, aside, nav, main, article, figure {
 }
 
 body{
-  background-color: #222;
+  color: #e4e4e4;
+}
+
+img{
+  width: 100%;
+  max-width: 300px;
 }
 
 p{
   margin: 0;
   padding: 0;
-  color: white;
+  color: #333;
   font: 16px/30px 'Fauna One', Georgia, serif;
 }
 
@@ -23,15 +28,16 @@ a:hover{
 }
 
 .h1{
-  color: #e4e4e4;
-  line-height: 105px;
-  font: 70px/68px 'Playfair Display', Georgia, serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font: 40px 'Playfair Display', Georgia, serif;
 }
 
-.h2{
-  color: #e4e4e4;
-  line-height: 55px;
-  font: 45px/68px 'Playfair Display', Georgia, serif;
+.subtitle{
+  margin: 0;
+  color: #333;
+  font: 20px 'Playfair Display', Georgia, serif;
 }
 
 .hero{
@@ -46,7 +52,7 @@ a:hover{
 }
 
 .container{
-  max-width: 800px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -102,10 +108,6 @@ a:hover{
 .strip{
   height: 5px;
   background-color: #FA58F4;
-}
-
-.background-black{
-  background-color: black;
 }
 
 .clearfix{
