@@ -123,6 +123,33 @@ footer{
   height: 20px;
 }
 
+.mar-b{ margin-bottom: 20px; }
+.mar-b-l{ margin-bottom: 40px; }
+
+.post p{
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.post .h2{
+  color: #333;
+  font: 25px 'Playfair Display', Georgia, serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.post li{
+  color: #333;
+  font: 17px 'Playfair Display', Georgia, serif;
+  margin-bottom: 15px;
+}
+
+.post ul{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
 @media only screen and (max-width : 640px) {
   .container{ margin: 0px 10px; }
 
