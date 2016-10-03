@@ -8,6 +8,9 @@ body{
 
 img{
   width: 100%;
+}
+
+img.home-image{
   max-width: 300px;
 }
 
